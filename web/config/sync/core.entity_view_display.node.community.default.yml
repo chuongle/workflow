@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.community.body
+    - field.field.node.community.field_image
     - node.type.community
   module:
+    - image
     - text
     - user
 id: node.community.default
@@ -19,6 +21,14 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   links:
     weight: 100
 hidden: {  }

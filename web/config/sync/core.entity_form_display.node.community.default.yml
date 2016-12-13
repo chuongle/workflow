@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.community.body
+    - field.field.node.community.field_image
+    - image.style.thumbnail
     - node.type.community
   module:
+    - image
     - path
     - text
 id: node.community.default
@@ -26,6 +29,13 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   path:
     type: path
     weight: 30
