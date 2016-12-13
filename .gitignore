@@ -2,7 +2,7 @@
 drush/contrib
 vendor
 web/core
-web/sites
+web/sites/default/files
 web/modules/cust
 web/profiles/contrib
 web/themes/contrib
