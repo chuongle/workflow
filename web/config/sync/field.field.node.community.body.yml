@@ -1,0 +1,22 @@
+uuid: 1adc6470-722f-4df9-8c56-0d88da5d04dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.community
+  module:
+    - text
+id: node.community.body
+field_name: body
+entity_type: node
+bundle: community
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
